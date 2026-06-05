@@ -1,104 +1,10 @@
-/* RESET */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-/* SCROLL SUAVE */
-
-html{
-    scroll-behavior:smooth;
-}
-
-/* BODY */
-
-body{
-
-    background-color:#0f1117;
-
-    font-family:Arial, Helvetica, sans-serif;
-
-    color:white;
-}
-
-/* NAVBAR */
-
-.navbar{
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:20px 60px;
-
-    background-color:rgba(0,0,0,0.75);
-
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
-    z-index:1000;
-
-    backdrop-filter:blur(8px);
-}
-
-/* LOGO */
-
-.logo{
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    letter-spacing:2px;
-}
-
-/* LINKS */
-
-.nav-links{
-
-    display:flex;
-
-    gap:40px;
-
-    list-style:none;
-}
-
-.nav-links a{
-
-    text-decoration:none;
-
-    color:white;
-
-    font-size:17px;
-
-    transition:0.3s;
-}
-
-/* HOVER */
-
-.nav-links a:hover{
-
-    color:#00bfff;
-
-    text-shadow:0 0 10px #00bfff;
-}
-
 /* HERO */
 
 .hero{
 
     width:100%;
 
-    height:55vh;
+    height:45vh;
 
     background:
     linear-gradient(
@@ -126,88 +32,9 @@ body{
 
     gap:30px;
 
-    padding:60px 40px;
+    padding:20px 40px 60px 40px;
 
     background:#0f1117;
 
     flex-wrap:wrap;
-}
-
-/* TARJETAS */
-
-.game-card{
-
-    width:320px;
-
-    background:rgba(255,255,255,0.03);
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    padding:20px;
-
-    text-align:center;
-
-    box-shadow:0 0 15px rgba(0,0,0,0.4);
-
-    transition:0.3s;
-}
-
-.game-card:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 0 25px rgba(0,191,255,0.25);
-}
-
-/* TITULOS */
-
-.game-card h2{
-
-    margin-bottom:15px;
-
-    font-size:28px;
-}
-
-/* VIDEOS */
-
-.game-card video{
-
-    width:100%;
-
-    border-radius:10px;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-    .navbar{
-
-        flex-direction:column;
-
-        gap:15px;
-    }
-
-    .nav-links{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:20px;
-    }
-
-    .games-grid{
-
-        padding:40px 20px;
-    }
-
-    .game-card{
-
-        width:100%;
-        max-width:400px;
-    }
-
 }
