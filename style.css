@@ -123,3 +123,40 @@ body{
 
     color: #cccccc;
 }
+.videos{
+
+    padding: 80px 50px;
+
+    background-color: #0f1117;
+}
+
+.videos h2{
+
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+}
+
+.video-container{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.video-container video{
+
+    width: 500px;
+
+    max-width: 100%;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
