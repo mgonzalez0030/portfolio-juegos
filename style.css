@@ -114,41 +114,69 @@ body{
     background-repeat:no-repeat;
 }
 
-/* SECCIONES DE VIDEO */
+/* GRID DE JUEGOS */
 
-.video-card{
+.games-grid{
 
-    width:100%;
+    display:flex;
 
-    padding:80px 40px;
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    padding:60px 40px;
+
+    background:#0f1117;
+
+    flex-wrap:wrap;
+}
+
+/* TARJETAS */
+
+.game-card{
+
+    width:320px;
+
+    background:rgba(255,255,255,0.03);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    padding:20px;
 
     text-align:center;
 
-    background-color:#0f1117;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+
+    transition:0.3s;
+}
+
+.game-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(0,191,255,0.25);
 }
 
 /* TITULOS */
 
-.video-card h2{
+.game-card h2{
 
-    font-size:42px;
+    margin-bottom:15px;
 
-    margin-bottom:30px;
-
-    color:white;
+    font-size:28px;
 }
 
 /* VIDEOS */
 
-.video-card video{
+.game-card video{
 
-    width:90%;
+    width:100%;
 
-    max-width:1200px;
-
-    border-radius:12px;
-
-    box-shadow:0 0 20px rgba(0,0,0,0.6);
+    border-radius:10px;
 }
 
 /* RESPONSIVE */
@@ -171,9 +199,15 @@ body{
         gap:20px;
     }
 
-    .video-card h2{
+    .games-grid{
 
-        font-size:30px;
+        padding:40px 20px;
+    }
+
+    .game-card{
+
+        width:100%;
+        max-width:400px;
     }
 
 }
