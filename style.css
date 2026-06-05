@@ -111,7 +111,7 @@ body{
 
     width:100%;
 
-    height:30vh;
+    height:20vh;
 }
 
 /* GRID DE JUEGOS */
@@ -126,9 +126,9 @@ body{
 
     gap:30px;
 
-    padding:30px 40px 60px 40px;
+    padding:60px 40px;
 
-    background:transparent;
+    margin-top:80px;
 
     flex-wrap:wrap;
 
